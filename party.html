@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Josh & Jenny</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster+Two">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lobster Two", sans-serif}
+.main{
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  transform:(-50%, -50%);
+}
+h1{
+  color: white;
+  font-size: 6vw;
+  font-family: "Lobster Two", sans-serif
+}
+h2{font-family: "Lobster Two", sans-serif
+
+}
+span, span:after {
+    font-weight: 900;
+    color: #efedce;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: .1em;
+    /* padding: .2em 0 .25em 0; */
+}
+
+span {
+    font-size: 8vw;
+    z-index: 100;
+    text-shadow: .04em .04em 0 #9cb8b3;
+}
+
+span:after {
+    content: attr(data-shadow-text);
+    color: rgba(0,0,0,.35);
+    text-shadow: none;
+    position: absolute;
+    /* left: .0875em;
+    top: .0875em; */
+    z-index: -1;
+    -webkit-mask-image: url(//f.cl.ly/items/1t1C0W3y040g1J172r3h/mask.png);
+}
+h5{
+  background-color:black;
+}
+p{background-color: black;}
+.bd-example{
+  width: 30%;
+margin-left: auto;
+margin-right: auto;
+font-family: arial;
+
+text-indent: 2.0em;
+
+}
+.theguys{
+    font-size: 30px;
+    
+}
+img{
+  width: 50%;
+  height: 50%;
+}
+.bd-example{
+    width: 50%;
+    height: 50%;
+}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+    <a href="story.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Our Story</a>
+    <a href="photos.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Gallery</a>
+    <a href="video.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Video</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
+    <a href="weddinginfo.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">When & Where?</a>
+    <a href="#weddingparty" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Wedding Party</a>
+    <a target="_blank" rel="noopener noreferrer"  href="http://www.joshfoster.online" class="w3-bar-item w3-button w3-padding-large w3-hide-small">RSVP</a>
+     <a href="guestaccomodations" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Guest Accomodations</a>
+
+
+
+    </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  </div>
+
+
+<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="story.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Our Story</a>
+  <a href="photos.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Gallery</a>
+  <a href="video.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Video</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Contact</a>
+  <a href="weddinginfo.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">When & Where?</a>
+  <a href="#weddingparty" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Wedding Party</a>
+  <a target="_blank" rel="noopener noreferrer"  href="http://www.joshfoster.online" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">RSVP</a>
+    <a href="guestaccomodations.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Guest Accomodations</a>
+
+</div>
+
+<!-- Page content -->
+
+  <!-- The Header Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <h2 class="w3-wide">Our Wedding Party</h2>
+    <p style="background-color: white;"class="w3-opacity theguys"><i>The Guys</i></p>
+    <p style="background-color: white; font-size: 20px" class="w3-justify" style= "text-indent: 30px;"> &nbsp;&nbsp;&nbsp;&nbsp; My wedding party consists of a great group of guys, who most of them I have know since grade school. Through out the years, we have created so many good memories together. We have motivated each other and helped each other through tough times over the years. Even though we are busy with our adult and family lives.. no matter how long we go without talking.. we can always just pick back up were we left off. I feel that the older we get the more we appreciate each other. This is a good group of guys, who I am proud and blessed to say are my good friends. I am excited to get these guys together and celebrate the big day.  </p>
+
+  </div>
+
+<!-- Page Content -->
+<div class="bd-example">
+  <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="4"></li>
+            <li data-target="#carouselExampleCaptions" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+                <div class="carousel-item active">
+        <img src="groupphoto.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+     
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="packman.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5>Jared - The Best Man</h5>
+          <!--<p>I have known Jared since third grade. We kicked it off in grade school with our love for dragon ball z. Jared and I would turn super Saiyan at recess and shoot kahmeha Maya’s at each other while the other kids would play sports. Jared has always had a big heart and is always the life of the party. He does not care what other people think and will have fun in every moment. He is one of the craziest people I have ever met,  but also one of the funnest to be around. Some of my best memories in life are spending hours laughing at absolutely nothing with this guy. I look up to Jared. He is a family man. He is an amazing father to his two beautiful daughters and a wonderful husband to his wife. At the wedding reception he will be performing “Hey Yeah” by OutKast on the dance floor. </p>-->
+        </div>
+      </div>
+    
+      <div class="carousel-item">
+        <img src="dennis.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Dennis</h5>
+          <!--<p>I met Dennis in 5th grade. Growing up all of our friends would spend weeks at Dennis’s house playing video games. Dennis and I would pull all nighter’s during the summer  to beat co-op shooter games. He is one of the nicest people I have ever met and has a big heart. Dennis has great work ethic and is a great father to his son mason. It is always nice to laugh at all the memories we had growing up. Dennis has always been the one to say and do the weirdest and goofiest things of anyone I know to make us laugh. Dennis is a great guy and a great friend. You will see Dennis representing his work hard play hard ethic on the dance floor when the DJ plays wiz Khalifa. </p>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="jose.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Jose </h5>
+<!--<p>Jose runs and owns an accounting business in our hometown. This man has worked very hard to get where he is and is one of the smartest people I have ever met. I met jose in high school sophomore year. He was a quiet and good kid until our group of friends brought him to the dark side. Like I said he is honestly one of the smartest people I have ever met in my life, but together we have made some of the dumbest decisions throughout high school and college. Jose has been my right hand man out of high school. He has inspired me to have a good time and enjoy life, but work hard and hit goals. We have always motivated each other and have always been close friends. We share a lot in common especially after our step fathers, who raised us, both passed a few years ago. Jose is a businessman, but also a party man. You will most likely see him passed out on the dance floor.</p> -->       </div>
+      </div>
+      <div class="carousel-item">
+        <img src="chuck.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-md-block">
+          <h5>Chuck </h5>
+          <!--<p>Chuck is a correctional officer at LaSalle county Sheriffs department. Chuck is the “big guy” of the group. When I first met chuck we hated each other. Over the years of being forced to hang out with each other through friends, we finally connected through lifting weights. Chuck helped me get my first job at 19 flipping burgers at the igloo diner. Chuck and I worked here for a few years as the main cooks. We would chug monsters at work and then hit the gym after. Chuck has been a great friend since and is always a real friend to converse with. He has always been true to himself and does not conform against his morals and beliefs. He has always inspired me to make smart decisions and not conform to others. Great guy and good role model. Single ladies watch out for chuck on the dance floor.</p>-->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="johnny.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5>Johnny</h5>
+          <!--<p>I met Johnny junior year of high school. When I transferred to a new high school my junior year I did not really know anyone. I met him through Jared and we kicked it off right away. Johnny is an all around great guy and friend, who will laugh and get along with anyone. Too many good memories-->
+          <!--of having too many drinks and singing our hearts out to screamo bands. You will see Johnny headbanging and performing as the lead singer of the band on the dance floor.   </p>-->
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+
+
+
+<!-- End Page Content -->
+
+<!-- Image of location/map -->
+<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p style="background-color: white"class="w3-medium">@JoshFosterWebDevelopment</p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+//carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 4000);
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
